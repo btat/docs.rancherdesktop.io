@@ -129,7 +129,7 @@ Refer [here](#reset-kubernetesreset-kubernetes-and-container-images) to learn ab
 
 The **WSL Integration** tab gives the option to make the Rancher Desktop Kubernetes configuration accessible to any Linux distributions configured for WSL. Once enabled, you can use communicate with the Rancher Desktop Kubernetes cluster using tools like `kubectl` from within the WSL distribution.
 
-## Port Forwarding (Windows)
+## Port Forwarding
 
 To forward a port:
 
