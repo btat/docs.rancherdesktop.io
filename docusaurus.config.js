@@ -102,13 +102,25 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    plugins: [
-      [require.resolve('docusaurus-lunr-search'),
-          {
-              indexBaseUrl: true
-          }
-      ]
+  plugins: [
+    [require.resolve('docusaurus-lunr-search'),
+    {
+      indexBaseUrl: true
+    }
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        fromExtensions: ['html', 'htm'],
+        redirects: [
+          {
+            to: '/faq',
+            from: '/1.6/faq'
+          }
+        ]
+      }
+    ]
+  ]
 };
 
 module.exports = config;
